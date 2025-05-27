@@ -4,16 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ceemarkett | Temu Free Offers</title>
-
-  <!-- Favicon -->
-  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/2/27/Temu_logo.svg" type="image/svg+xml">
-
-  <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
-  <!-- Google Analytics -->
+  
+  <!-- Google Analytics Tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFPLT97RKE"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -31,124 +26,81 @@
     }
     body {
       background: url('https://images.unsplash.com/photo-1606813903367-594f93f2e9a3?fit=crop&w=1600&q=80') no-repeat center center/cover;
-      color: #fff;
+      color: #333;
       min-height: 100vh;
-      padding: 2rem 1rem;
+      text-align: center;
+      padding: 2rem;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      text-align: center;
-      position: relative;
     }
     .logo {
-      width: 140px;
-      margin-bottom: 1.5rem;
+      width: 120px;
+      margin: 0 auto 20px;
       animation: fadeIn 1s ease-out;
     }
     h1 {
       font-size: 1.8rem;
-      color: #fff;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1rem;
       animation: fadeIn 1.2s ease-out;
     }
     .cta-button {
       background-color: #ff6b00;
       color: white;
-      padding: 0.9rem 2.2rem;
+      padding: 0.8rem 2rem;
       font-size: 1rem;
       border: none;
       border-radius: 30px;
       text-decoration: none;
-      margin: 1.5rem 0;
-      transition: background 0.3s, transform 0.2s;
+      display: inline-block;
+      margin: 20px 0;
+      transition: background 0.3s;
       animation: fadeIn 1.4s ease-out;
     }
     .cta-button:hover {
       background-color: #e95c00;
-      transform: scale(1.05);
     }
     .social-icons {
       display: flex;
       justify-content: center;
-      gap: 1.2rem;
+      gap: 1rem;
       margin-top: 1rem;
       animation: fadeIn 1.6s ease-out;
     }
     .social-icons a {
-      color: #fff;
-      font-size: 1.6rem;
-      background: rgba(0,0,0,0.3);
-      padding: 10px;
-      border-radius: 50%;
-      transition: transform 0.3s, background 0.3s;
+      color: #333;
+      font-size: 1.5rem;
+      transition: transform 0.3s;
     }
     .social-icons a:hover {
       transform: scale(1.2);
-      background: rgba(0,0,0,0.5);
     }
     .footer {
       margin-top: 2rem;
       font-size: 0.85rem;
-      color: #ccc;
+      color: #555;
       animation: fadeIn 1.8s ease-out;
     }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-    #loader {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: #000;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      z-index: 9999;
-    }
   </style>
 </head>
 <body>
-
-  <div id="loader">Loading Ceemarkett...</div>
-
-  <!-- Fixed Logo Link -->
   <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Temu_logo.svg" alt="Temu Logo" class="logo">
-
   <h1>Tap below to unlock free offers</h1>
-
-  <a href="https://singingfiles.com/show.php?l=0&u=2396508&id=68836"
-     class="cta-button"
-     target="_blank"
-     onclick="trackClick()">
+  <a href="https://singingfiles.com/show.php?l=0&u=2396508&id=68836" class="cta-button" target="_blank">
     Unlock Free Offer
   </a>
-
   <div class="social-icons">
     <a href="https://instagram.com/ceemarkett" target="_blank"><i class="fab fa-instagram"></i></a>
     <a href="https://tiktok.com/@ceemarkett" target="_blank"><i class="fab fa-tiktok"></i></a>
     <a href="https://facebook.com/ceemarkett" target="_blank"><i class="fab fa-facebook"></i></a>
     <a href="https://youtube.com/@ceemarkett" target="_blank"><i class="fab fa-youtube"></i></a>
   </div>
-
   <div class="footer">
     ©2025 Ceemarkett | All rights reserved
   </div>
-
-  <script>
-    window.addEventListener("load", function () {
-      const loader = document.getElementById("loader");
-      loader.style.display = "none";
-    });
-    function trackClick() {
-      gtag('event', 'click', {
-        event_category: 'CTA',
-        event_label: 'Unlock Free Offer'
-      });
-    }
-  </script>
 </body>
 </html>
