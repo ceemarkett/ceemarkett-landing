@@ -6,7 +6,7 @@
   <title>Ceemarkett | Temu Free Offers</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="https://i.imgur.com/Ze5dDZO.png" type="image/png">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/2/27/Temu_logo.svg" type="image/svg+xml">
 
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -97,7 +97,6 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-    /* Loader */
     #loader {
       position: fixed;
       top: 0; left: 0;
@@ -114,10 +113,11 @@
 </head>
 <body>
 
-  <!-- Pre-loader -->
   <div id="loader">Loading Ceemarkett...</div>
 
-  <img src="https://i.imgur.com/sBXaA0p.png" alt="Temu Logo" class="logo">
+  <!-- Fixed Logo Link -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Temu_logo.svg" alt="Temu Logo" class="logo">
+
   <h1>Tap below to unlock free offers</h1>
 
   <a href="https://singingfiles.com/show.php?l=0&u=2396508&id=68836"
@@ -139,13 +139,10 @@
   </div>
 
   <script>
-    // Loader
     window.addEventListener("load", function () {
       const loader = document.getElementById("loader");
       loader.style.display = "none";
     });
-
-    // CTA click tracking
     function trackClick() {
       gtag('event', 'click', {
         event_category: 'CTA',
